@@ -1,0 +1,261 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Single Day', cursive;
+   
+}
+
+#container{
+    width: 100%;
+    height: 95vh;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 100px;
+    margin-top: 40px;
+}
+
+.logo{
+    width: 150px;
+}
+.list-items{
+    display: inline;
+    /* incase dot wont gone use */
+    list-style: none;
+    margin: 0px 20px 0px 20px;
+    font-size: 20px;
+}
+
+.links{
+    text-decoration: none;
+    font-weight: 800;
+    color: blueviolet;
+}
+
+/* css psuedo class
+selector:pseudo-class{property:value;
+    ("hover" tag used for  ) */
+
+    .links:hover{
+        color: red;
+        text-shadow: 10px 2px 1px ;
+    }
+    .home-contents{
+        margin: 15% 0px 0px 10%;
+    }
+    #username{
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+    #name{
+        color: bisque;
+    }
+    #user-details{
+        line-height: 1.2;
+    }
+
+    #download{
+        text-decoration: none;
+        background-color: black;
+        color: white;
+        font-weight: 700;
+        padding: 10px;
+        border-radius: 10px;
+        display: inline-block;
+        margin-top: 30px;
+    }
+
+    .home-images{
+        width: 45%;
+        height: 80%;
+        position: absolute;
+        right: 30px;
+        bottom: 0;
+    }
+
+    .group1{
+        height: 80%;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: bottom 2s,left 1s;
+    }
+
+    .home-images:hover #shape{
+        bottom: 70px;
+    }
+    .home-images:hover #girl{
+        left: 40%;
+    }
+
+#about{
+    margin: 15% 8% 0px 8%;
+}
+.section-head{
+    text-align: center;
+}
+.mainhead{
+    font-size: 30px;
+}
+.subhead{
+    font-size: 20px;
+    color: green;
+}
+.about-body{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+}
+.about-img>img{
+    width: 500px;
+}
+.about-contents{
+    font-size: 18px;
+    text-align: justify;
+}
+.informations{
+    margin-top: 1rem;
+}
+.info-box{
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+.info-box>span{
+    margin-left: 1rem;
+}
+/* skills */
+
+#skill{
+    margin: 8% 8% 0px 8%;
+}
+.skill-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.my-skill{
+    width: 100%;
+}
+/* bar */
+.bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0px;
+    position: relative;
+}
+.bar-head,.bar-percent{
+    font-weight: 500;
+    font-size: 1.1rem;
+
+}
+
+.base-bar{
+    width: 100%;
+    height: 0.5rem;
+    background-color: black;
+    border-radius: 0.5rem;
+    position: absolute;
+    bottom: 0px;
+}
+
+.html-bar{
+    width: 90%;
+    background-color: red;
+}
+.css-bar{
+    width: 85%;
+    background-color: red;
+}
+.js-bar{
+    width: 81%;
+    background-color: red;
+}
+.react-bar{
+    width: 83%;
+    background-color: red;
+}
+
+.icon-collection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+   }
+.icon{
+    width: 50px;
+    height: 50px;
+    /* border: 1px solid; */
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3%;
+    }
+
+.icon:hover{
+    background-image: linear-gradient(to bottom right,white,red,yellow);
+}
+.brand{
+    color: black;
+    font-size: 30px;
+}
+
+.icon:hover .brand{
+    color: white;
+    animation: rotate 1s;
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(30deg);
+    }
+    20%{
+        transform: rotate(-30deg);
+    }
+    40%{
+        transform: rotate(60deg);
+    }
+    60%{
+        transform: rotate(90deg);
+    }
+    80%{
+        transform: rotate(120deg);
+    }
+    100%{
+        transform: rotate(180deg);
+    }
+}
+
+/* footer */
+#copyright{
+    font-weight: 700;
+    text-align: center;
+}
+.up-arrow{
+    float: right;
+    margin: -40px 30px 30px 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    width: 10px;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: aqua;
+}
+::-webkit-scrollbar-thumb{
+    background-color: red;
+    border-radius: 10px;
+}
